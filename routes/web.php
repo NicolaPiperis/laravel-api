@@ -39,6 +39,4 @@ Route :: post('/store', [MainController :: class, 'store'])
     -> middleware(['auth'])
     -> name('portfolio.store');
 
-Route::get('/', [ProjectController :: class, 'index']) -> name('welcome');
-
 require __DIR__.'/auth.php';
